@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58d3f743-3f3c-4895-b2f4-1659307cd08c" name="Default Changelist" comment="contacts bug" />
+    <list default="true" id="58d3f743-3f3c-4895-b2f4-1659307cd08c" name="Default Changelist" comment="contacts bug">
+      <change afterPath="$PROJECT_DIR$/venvur/Lib/site-packages/decouple.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venvur/Lib/site-packages/python_decouple-3.4.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venvur/Lib/site-packages/python_decouple-3.4.dist-info/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venvur/Lib/site-packages/python_decouple-3.4.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venvur/Lib/site-packages/python_decouple-3.4.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venvur/Lib/site-packages/python_decouple-3.4.dist-info/REQUESTED" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venvur/Lib/site-packages/python_decouple-3.4.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venvur/Lib/site-packages/python_decouple-3.4.dist-info/top_level.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623239103752</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="contacts bug">
+      <created>1623239127373</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1623239127373</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
