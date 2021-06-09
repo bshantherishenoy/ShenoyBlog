@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58d3f743-3f3c-4895-b2f4-1659307cd08c" name="Default Changelist" comment="res added">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog.sqbpro" beforeDir="false" afterPath="$PROJECT_DIR$/blog.sqbpro" afterDir="false" />
-    </list>
+    <list default="true" id="58d3f743-3f3c-4895-b2f4-1659307cd08c" name="Default Changelist" comment="contacts bug" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623235687660</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="contacts bug">
+      <created>1623239103752</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1623239103752</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -124,6 +128,7 @@
     <MESSAGE value="aranmula added" />
     <MESSAGE value="aranmula gunicorn" />
     <MESSAGE value="res added" />
-    <option name="LAST_COMMIT_MESSAGE" value="res added" />
+    <MESSAGE value="contacts bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="contacts bug" />
   </component>
 </project>
