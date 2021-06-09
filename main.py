@@ -192,8 +192,8 @@ def about():
 @app.route("/contact",methods = ["GET","POST"])
 def contact():
     if request.method == "POST":
-        data = request.form
-        send_main(data["name"], data["email"], data["phone"], data["message"])
+        # data = request.form
+        # send_main(data["name"], data["email"], data["phone"], data["message"])
         return render_template("contact.html", msg_sent=True, current_user=current_user)
     return render_template("contact.html", msg_sent=False, current_user=current_user)
 

@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58d3f743-3f3c-4895-b2f4-1659307cd08c" name="Default Changelist" comment="contacts bug">
-      <change afterPath="$PROJECT_DIR$/venvur/Lib/site-packages/decouple.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venvur/Lib/site-packages/python_decouple-3.4.dist-info/INSTALLER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venvur/Lib/site-packages/python_decouple-3.4.dist-info/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venvur/Lib/site-packages/python_decouple-3.4.dist-info/METADATA" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venvur/Lib/site-packages/python_decouple-3.4.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venvur/Lib/site-packages/python_decouple-3.4.dist-info/REQUESTED" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venvur/Lib/site-packages/python_decouple-3.4.dist-info/WHEEL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venvur/Lib/site-packages/python_decouple-3.4.dist-info/top_level.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-    </list>
+    <list default="true" id="58d3f743-3f3c-4895-b2f4-1659307cd08c" name="Default Changelist" comment="contacts bug--2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -126,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623239127373</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="contacts bug--2">
+      <created>1623240996577</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1623240996577</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -147,6 +143,7 @@
     <MESSAGE value="aranmula gunicorn" />
     <MESSAGE value="res added" />
     <MESSAGE value="contacts bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="contacts bug" />
+    <MESSAGE value="contacts bug--2" />
+    <option name="LAST_COMMIT_MESSAGE" value="contacts bug--2" />
   </component>
 </project>
