@@ -10,6 +10,7 @@ from flask_login import UserMixin, login_user, LoginManager, login_required, cur
 from forms import LoginForm, RegisterForm, CreatePostForm, CommentForm
 from flask_gravatar import Gravatar
 import os
+from flask_mail import Mail, Message
 import smtplib
 
 app = Flask(__name__)
@@ -22,8 +23,20 @@ gravatar = Gravatar(app, size=100, rating='g', default='retro', force_default=Fa
 my_email = os.getenv("EMAIL")
 my_password = os.getenv("PASSWORD")
 
+app.config['MAIL_SERVER'] = 'smtp.gmail.com'
+app.config['MAIL_PORT'] = 587
+app.config['MAIL_USE_TLS'] = True
+app.config['MAIL_USE_SSL'] = False
+app.config['MAIL_USERNAME'] = my_email
+app.config['MAIL_DEBUG'] = True
+app.config['MAIL_PASSWORD'] = my_password
+app.config['MAIL_DEFAULT_SENDER'] = ('Shantheri from Aranmula',my_email)
+app.config['MAIL_MAX_EMAILS'] = None
+app.config['MAIL_SUPPRESS_SEND'] = False
+app.config['MAIL_ASCII_ATTACHMENTS'] = False
 
 
+mail = Mail(app)
 
 ##CONNECT TO DB
 app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('SQLALCHEMY_DATABASE_URI', "sqlite:///blog.db")
@@ -72,25 +85,6 @@ class Comment(db.Model):
     text = db.Column(db.Text, nullable=False)
 
 db.create_all()
-
-
-
-def send_main(name,email,phone,message):
-    connection = smtplib.SMTP("smtp.gmail.com", 587)
-    connection.starttls()
-    connection.login(user=my_email, password=my_password)
-    connection.sendmail(
-        from_addr=my_email,
-        to_addrs="bg.18.beis@acharya.ac.in",
-        msg=f"Subject:New Message\n\nFrom: {name}\n Email: {email}\n Phone: {phone}\n{message}"
-    )
-    connection.sendmail(
-        from_addr=my_email,
-        to_addrs=email,
-        msg=f"Subject:no-reply\n\nThanks for contacting Shenoy... We shall meet up soon!!"
-    )
-    connection.close()
-
 
 def admin_only(f):
     @wraps(f)
@@ -192,8 +186,10 @@ def about():
 @app.route("/contact",methods = ["GET","POST"])
 def contact():
     if request.method == "POST":
-        # data = request.form
-        # send_main(data["name"], data["email"], data["phone"], data["message"])
+        data = request.form
+        msg = Message("New User", recipients=['aranmulacollections@gmail.com'])
+        msg.body = f"Name:{data['name']} ,Email:{data['email']}, Phone:{data['phone']},Message: {data['message']}"
+        mail.send(msg)
         return render_template("contact.html", msg_sent=True, current_user=current_user)
     return render_template("contact.html", msg_sent=False, current_user=current_user)
 
